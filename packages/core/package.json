@@ -1,0 +1,14 @@
+{
+  "name": "core",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "pnpm build -- --watch",
+    "build": "tsup",
+    "start": "esno src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
