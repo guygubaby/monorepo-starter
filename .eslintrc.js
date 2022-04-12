@@ -2,7 +2,7 @@ module.exports = {
   env: {
     jest: true,
   },
-  extends: ['@bryce-loskie'],
+  extends: ['@bryce-loskie', 'prettier', 'plugin:prettier/recommended'],
   plugins: ['jest'],
   rules: {
     '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
@@ -10,9 +10,7 @@ module.exports = {
   },
   overrides: [
     {
-      files: [
-        'playground/**/*.*',
-      ],
+      files: ['playground/**/*.*'],
       rules: {
         'no-restricted-imports': 'off',
       },
