@@ -2,6 +2,9 @@
   "name": "core",
   "version": "0.0.0",
   "description": "",
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -13,6 +16,7 @@
     }
   },
   "scripts": {
+    "prepublishOnly": "pnpm build",
     "dev": "pnpm build -- --watch",
     "build": "tsup",
     "start": "esno src/index.ts"

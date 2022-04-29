@@ -1,3 +1,4 @@
+import { expect, test } from 'vitest'
 import { foo } from 'core'
 
 test('test foo', () => {

@@ -12,7 +12,7 @@ export default defineConfig({
   resolve: {
     alias: {
       '@/': `${resolve(__dirname, 'src')}/`,
-      'core': resolve('../packages/core/src/'),
+      core: resolve('../packages/core/src/'),
     },
   },
   plugins: [
@@ -27,10 +27,7 @@ export default defineConfig({
 
     // https://github.com/antfu/unplugin-auto-import
     AutoImport({
-      imports: [
-        'vue',
-        'vue-router',
-      ],
+      imports: ['vue', 'vue-router'],
       dts: true,
     }),
 
