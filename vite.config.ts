@@ -2,6 +2,7 @@
 
 import { resolve } from 'path'
 import { defineConfig } from 'vite'
+import AutoImport from 'unplugin-auto-import/vite'
 
 export default defineConfig({
   test: {
@@ -13,4 +14,10 @@ export default defineConfig({
       core: resolve('./packages/core/src/'),
     },
   },
+  plugins: [
+    AutoImport({
+      imports: ['vitest'],
+      dts: true,
+    }),
+  ],
 })
