@@ -1,24 +1,8 @@
-<script setup lang="ts">
-import { foo } from 'core/index'
-
-const name = ref('')
-const router = useRouter()
-const go = () => {
-  if (name)
-    router.push(`/hi/${encodeURIComponent(name.value)}`)
-}
-</script>
-
 <template>
   <div>
     <div i-carbon-campsite text-4xl inline-block />
     <p>
-      <a rel="noreferrer" href="https://github.com/antfu/vitesse-lite" target="_blank">
-        Playground generated from Vitesse Lite
-      </a>
-    </p>
-    <p>
-      <em text-sm op75>It works, {{ foo }}</em>
+      <span text-sm op75>It works, {{ foo }}</span>
     </p>
 
     <div py-4 />
@@ -49,3 +33,14 @@ const go = () => {
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+import { foo } from 'core/index'
+
+const name = ref('')
+const router = useRouter()
+const go = () => {
+  if (name)
+    router.push(`/hi/${encodeURIComponent(name.value)}`)
+}
+</script>

@@ -1,9 +1,6 @@
 module.exports = {
-  extends: ['@bryce-loskie', 'prettier', 'plugin:prettier/recommended'],
-  rules: {
-    '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
-    'no-console': 'off',
-  },
+  extends: ['@bryce-loskie'],
+  rules: {},
   overrides: [
     {
       files: ['playground/**/*.*'],

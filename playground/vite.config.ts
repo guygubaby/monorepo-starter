@@ -1,7 +1,6 @@
 import { resolve } from 'path'
 import { defineConfig } from 'vite'
 import Vue from '@vitejs/plugin-vue'
-import { presetUno } from 'unocss'
 import Unocss from 'unocss/vite'
 import Pages from 'vite-plugin-pages'
 import Components from 'unplugin-vue-components/vite'
@@ -12,7 +11,7 @@ export default defineConfig({
   resolve: {
     alias: {
       '@/': `${resolve(__dirname, 'src')}/`,
-      core: resolve('../packages/core/src/'),
+      'core': resolve('../packages/core/src/'),
     },
   },
   plugins: [
@@ -36,9 +35,7 @@ export default defineConfig({
       dts: true,
     }),
 
-    Unocss({
-      presets: [presetUno()],
-    }),
+    Unocss(),
   ],
   server: {
     port: 3333,
