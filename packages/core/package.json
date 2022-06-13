@@ -5,9 +5,17 @@
   "publishConfig": {
     "access": "public"
   },
-  "author": "guygubaby@gmail.com",
-  "license": "MIC",
+  "author": "guygubaby guygubaby@gmail.com",
+  "license": "MIT",
+  "funding": "https://github.com/sponsors/guygubaby",
+  "homepage": "https://github.com/guygubaby/monorepo-starter",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/guygubaby/monorepo-starter"
+  },
+  "bugs": "https://github.com/guygubaby/monorepo-starter/issues",
   "keywords": [],
+  "sideEffects": false,
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",

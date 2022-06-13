@@ -1,11 +1,11 @@
-import path from 'path'
-import fs from 'fs'
+import { join } from 'path'
+import { copyFileSync } from 'fs'
 
 const copyReadme = () => {
-  const srcPath = path.join(__dirname, '../README.md')
+  const srcPath = join(__dirname, '../README.md')
   const cwd = process.cwd()
-  const destPath = path.join(cwd, 'README.md')
-  fs.copyFileSync(srcPath, destPath)
+  const destPath = join(cwd, 'README.md')
+  copyFileSync(srcPath, destPath)
 }
 
 copyReadme()

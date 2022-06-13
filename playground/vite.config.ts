@@ -10,7 +10,7 @@ import Inspect from 'vite-plugin-inspect'
 export default defineConfig({
   resolve: {
     alias: {
-      '@/': `${resolve(__dirname, 'src')}/`,
+      '~/': `${resolve(__dirname, 'src')}/`,
       'core': resolve('../packages/core/src/'),
     },
   },
@@ -41,4 +41,9 @@ export default defineConfig({
     port: 3333,
   },
   optimizeDeps: {},
+  // https://github.com/antfu/vite-ssg
+  ssgOptions: {
+    script: 'async',
+    formatting: 'minify',
+  },
 })

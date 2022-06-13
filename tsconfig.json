@@ -1,17 +1,21 @@
 {
   "compilerOptions": {
-    "target": "esnext",
-    "module": "esnext",
-    "lib": ["esnext", "DOM"],
-    "moduleResolution": "node",
+    "module": "ESNext",
+    "target": "es2020",
+    "lib": [
+      "ESNext",
+      "DOM"
+    ],
     "esModuleInterop": true,
     "strict": true,
     "strictNullChecks": true,
+    "moduleResolution": "Node",
     "resolveJsonModule": true,
-    "skipDefaultLibCheck": true,
-    "paths": {
-      "core": ["./packages/core/src/index.ts"]
-    }
+    "skipLibCheck": true
   },
-  "exclude": ["**/dist/**", "**/node_modules/**"]
+  "exclude": [
+    "**/dist",
+    "**/node_modules",
+    "**/test"
+  ]
 }

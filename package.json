@@ -23,7 +23,9 @@
     "@types/node": "^17.0.42",
     "@vitejs/plugin-vue": "^2.3.3",
     "@vueuse/core": "^8.6.0",
+    "@vueuse/head": "^0.7.6",
     "bumpp": "^7.1.1",
+    "critters": "^0.0.16",
     "eslint": "^8.17.0",
     "esno": "^0.16.3",
     "jsdom": "^19.0.0",
@@ -35,6 +37,7 @@
     "vite": "^2.9.12",
     "vite-plugin-inspect": "^0.5.0",
     "vite-plugin-pages": "^0.23.0",
+    "vite-ssg": "^0.20.1",
     "vitest": "^0.14.2",
     "vue": "^3.2.37",
     "vue-router": "^4.0.16"
