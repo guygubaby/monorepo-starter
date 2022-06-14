@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div text-center>
     <div i-carbon-campsite text-4xl inline-block />
     <p>
       <span text-sm op75>It works, {{ foo }}</span>
@@ -31,6 +31,10 @@
         Go
       </button>
     </div>
+
+    <router-link class="btn mt-4" to="markdown">
+      markdown
+    </router-link>
   </div>
 </template>
 

@@ -7,5 +7,8 @@
   "files.associations": {
     "*.css": "css"
   },
-  "unocss.root": "playground"
+  "unocss.root": "playground",
+  "cSpell.words": [
+    "noopener"
+  ]
 }
