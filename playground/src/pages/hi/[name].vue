@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div text-center>
     <div i-carbon-pedestrian text-4xl inline-block />
     <p>
       Hi, {{ props.name }}
